@@ -133,7 +133,7 @@ fun ContactBox(iconData: ImageVector, content :String) {
 @Composable
 fun ContactBoxPreview() {
     MiCardTheme {
-        ContactBoxPreview()
+        ContactBox(iconData = Icons.Default.Phone, content = "+81-1234-5650")
     }
 }
 
