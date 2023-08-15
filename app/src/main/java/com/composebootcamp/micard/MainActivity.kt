@@ -6,13 +6,11 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -119,7 +117,7 @@ fun ContactBox(iconData: ImageVector, content :String) {
             .width(250.dp)
             .padding(horizontal = 8.dp, vertical = 4.dp)
     ) {
-        Icon(imageVector = iconData, contentDescription = "Phone", tint = Color.Blue)
+        Icon(imageVector = iconData, contentDescription = "Icon", tint = Color.Blue)
         Spacer(modifier = Modifier.width(24.dp))
         Text(text = content, style = TextStyle(
             color = Color.Magenta,
