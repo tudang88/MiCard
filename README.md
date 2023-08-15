@@ -26,6 +26,18 @@ subgraph email
 		end
 	end
 ```
-
-## 2. The result
+## 2. Create Circle Image by applying path
+```kotlin
+ // Profile image with Circle Boundary
+        Image(
+            painter = painterResource(id = R.drawable.naruto_profile),
+            contentDescription = "profile",
+            contentScale = ContentScale.FillBounds,
+            modifier = Modifier
+                .clip(CircleShape)
+                .size(200.dp)
+                .border(2.dp, Color.Gray, CircleShape)
+        )
+```
+## 3. The result
 ![](docs/image.png)
